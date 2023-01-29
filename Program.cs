@@ -10,17 +10,16 @@ for (int i = 0; i < array.Length; i++)
     Console.Write($"Введите строку массива под индексом {i}:\t");
     string? temp = Console.ReadLine();
     if (srtmax + 1 > temp.Length)
-    array[i] = temp;
+        array[i] = temp;
     else
-    array[i] = "";
+        array[i] = "";
 }
 Console.Write("Строки массива:\t[");
 for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] != "")
+{
+    if (array[i] != "")
         Console.Write($"{array[i]}");
-        if (i +1 < array.Length && array[i] != "")
-        Console.Write($", ");   
-    }
-Console.Write("]");        
-    
+    if (i + 1 < array.Length && array[i] != "")
+        Console.Write($", ");
+}
+Console.Write("]");
